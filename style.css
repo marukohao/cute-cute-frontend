@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Hanalei|Press+Start+2P|Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Luckiest+Guy&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  position: absolute;
+  font-size: 45px;
+  color: white;
+  text-shadow: 2px 2px 2px #f6caff;
+  margin-left: 50px;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 2px 2px #f6caff;
+  text-align: center;
+  font-size: 30px;
+}
+
+h5 {
+  margin-top: 100px;
+  position: absolute;
+  margin-left: 50px;
+  color: #ffb4c0;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 80px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Luckiest Guy', cursive;
+  /* margin-bottom: -450px; */
+  text-align: center;
+  margin-top: -5px;
+}
+
+#logo {
+  width: 300px;
+  margin-left: 70px;
+  margin-top: -60px;
+  margin-bottom: 20px;
+}
+
+.bg {
+  position: absolute;
+  background-image: url("../images/backgrounds/background-login.gif");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.profile-page {
+  position: absolute;
+  background-image: url("https://data.whicdn.com/images/269842832/original.gif");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.login-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+}
+
+#login {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  text-align: center;
+  padding: 55px;
+  width: 90%;
+  max-width: 550px;
+  margin-bottom: 311px;
+}
+
+.input {
+  border: none;
+  padding: 15px 20px;
+  /* border: 2px solid #afafe1; */
+  width: 100%;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  border-radius: 15px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.button-primary {
+  display: block;
+  background: #df8b3e;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 9px #6d66d4;
+  color: #f7f6f3;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 0.6em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  width: 100%;
+}
+
+.profilebackground {
+  /* background-image: url('https://data.whicdn.com/images/269842832/original.gif'); */
+  font-family: 'Press Start 2P', cursive;
+  height: 80%;
+  width: 80%;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  opacity: .7;
+}
+
+.background-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 200px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.video_thumb {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  display: block;
+  border: 2px solid #fff;
+  margin: 2em auto;
+  overflow: hidden;
+  border-radius: 20px;
+  /* box-shadow: 7px 20px 20px 2px rgba(5, 1, 1, 0.2), 0 10px 12px 0 rgba(99, 72, 72, 0.19); */
+  border: none;
+}
+
+.background-images {
+  position: absolute;
+  max-width: 100%;
+  height: 380px;
+  width: 550px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.background-images:hover {
+  transform: scale(1.05);
+}
+
+.returnToProfile {
+  font-size: 15px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: orange;
+  box-shadow: 7px 20px 20px 2px rgba(5, 1, 1, 0.2), 0 10px 12px 0 rgba(99, 72, 72, 0.19);
+}
+
+.returnToProfile:hover {
+  transform: scale(1.1);
+}
+
+.create-room-background {
+  position: relative;
+  max-width: 100%;
+  height: 700px;
+  width: 1200px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 7px 20px 20px 2px rgba(5, 1, 1, 0.2), 0 10px 12px 0 rgba(99, 72, 72, 0.19);
+}
+
+.play-button {
+  position: absolute;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  display: block;
+  /* border: 2px solid #fff; */
+  border-radius: 50%;
+  padding: 0;
+  margin: -50px;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.5s ease;
+  top: 50%;
+  left: 50%;
+}
+
+.play-button:after {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 14px);
+  display: block;
+  content: '';
+  box-sizing: border-box;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+  border-width: 26px 0 26px 40px;
+}
+
+.play-button:hover {
+  /* background-color: rgba(66, 51, 0, 0.9); */
+  background-color: teal;
+}
+
+.plus-button:hover {
+  background-color: rgba(66, 51, 0, 0.9);
+  background-color: teal;
+}
+
+.plus-button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 6rem;
+  width: 6rem;
+  border-radius: 100%;
+  position: relative;
+  transition: background-color 0.5s ease;
+  top: 33%;
+  left: 52%;
+  margin: -50px;
+}
+
+.plus-button:before, .plus-button:after {
+  position: absolute;
+  border-radius: 2px;
+  content: '';
+  width: 50%;
+  height: 10%;
+  top: calc(45%);
+  left: 25%;
+  background-color: white;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transition: all 0.6s ease-in-out;
+}
+
+.plus-button:after {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 1100px;
+  height: 100px;
+  margin-top: 70px;
+}
+
+.item-cards img {
+  /* border-radius: 69px; */
+  height: 150px;
+  width: 150px;
+  /* box-shadow: 7px 20px 20px 2px rgba(5, 1, 1, 0.2), 0 10px 12px 0 rgba(99, 72, 72, 0.19); */
+}
+
+.decoration-cards img {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+}
+
+.decoration-card img {
+  /* box-shadow: 7px 20px 20px 2px rgba(5, 1, 1, 0.2), 0 10px 12px 0 rgba(99, 72, 72, 0.19); */
+}
+
+/* .decoration-cards {
+  position: absolute;
+} */
+
+.image-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  width: 900px;
+  height: 150px;
+  margin-top: 150px;
+}
+
+.decorations-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80%;
+  max-height: 120px;
+  max-width: 900px;
+  margin-top: 70px;
+}
+
+.decoration-cards, .decoration-card {
+  position: relative;
+}
+
+.decorationImages {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+}
+
+.item-cards:hover {
+  transform: scale(1.1);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.room-choice {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-image: url("https://data.whicdn.com/images/269842832/original.gif");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.remove-image {
+  cursor: pointer;
+  transition: transform .2s;
+  display: none;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  border-radius: 10em;
+  padding: 2px 6px 3px;
+  text-decoration: none;
+  font: 700 21px/20px sans-serif;
+  background: #555;
+  border: 2px solid #fff;
+  color: #FFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.remove-item {
+  /* transition: transform .2s; */
+  cursor: pointer;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  border-radius: 10em;
+  padding: 2px 6px 3px;
+  text-decoration: none;
+  font: 700 21px/20px sans-serif;
+  background: #555;
+  border: 2px solid #fff;
+  color: #FFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  /* -webkit-transition: background 0.5s; */
+  /* transition: background 0.5s; */
+}
+
+.room-background-container {
+  position: relative;
+}
+
+.logout-button {
+  cursor: pointer;
+  font-size: 15px;
+  float: right;
+  border-radius: 8px;
+  padding: 12px 25px;
+  margin: 2%;
+  background-color: #fff5c7;
+}
+
+.logoImg {
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+}
