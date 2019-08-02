@@ -1,15 +1,15 @@
 
-const USERS_URL = 'http://localhost:3000/users'
-const BACKGROUNDS_URL = 'http://localhost:3000/backgrounds'
-const ITEMS_URL = 'http://localhost:3000/items'
-const ROOMS_URL = 'http://localhost:3000/rooms'
-const DECORATIONS_URL = 'http://localhost:3000/decorations'
+const USERS_URL = 'https://cute-cute-app.herokuapp.com/users'
+const BACKGROUNDS_URL = 'https://cute-cute-app.herokuapp.com/backgrounds'
+const ITEMS_URL = 'https://cute-cute-app.herokuapp.com/items'
+const ROOMS_URL = 'https://cute-cute-app.herokuapp.com/rooms'
+const DECORATIONS_URL = 'https://cute-cute-app.herokuapp.com/decorations'
 // const audio = ' <embed src="/Users/hao/Github/cute-cute-app/audio/Toy_Piano.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />'
 
-const audioHtml = `<audio id="audio" src="../audio/Wood_Plank_Flicks.mp3" ></audio>
-<audio id="audio2" src="../audio/zoo.mp3" loop="true"></audio>
-<audio id="audio3" src="../audio/bedroom.mp3" loop="true"></audio>
-<audio id="audio4" src="../audio/kitchen.mp3" loop="true"></audio>
+const audioHtml = `<audio id="audio" src="audio/Wood_Plank_Flicks.mp3" ></audio>
+<audio id="audio2" src="audio/zoo.mp3" loop="true"></audio>
+<audio id="audio3" src="audio/bedroom.mp3" loop="true"></audio>
+<audio id="audio4" src="audio/kitchen.mp3" loop="true"></audio>
 `
 
 function playAudio() {
@@ -19,7 +19,7 @@ function playAudio() {
 
 function addMusic() {
   const musicElement = document.createElement("embed");
-  musicElement.src = "../audio/Toy_Piano.mp3";
+  musicElement.src = "audio/Toy_Piano.mp3";
   document.querySelector('body').append(musicElement);
   musicElement.style = 'visibility: hidden';
 }
@@ -107,7 +107,7 @@ function createUserElements(data) {
   addMusic();
   const logoImg = document.createElement('img');
   logoImg.className = 'logoImg';
-  logoImg.src = '../images/backgrounds/dinosauranimallogo.png';
+  logoImg.src = 'images/backgrounds/dinosauranimallogo.png';
   profileDiv.appendChild(logoImg);
 }
 
@@ -235,7 +235,7 @@ function roomChoice(button, image, userId, backgroundId, roomJson) {
       profilePage.appendChild(itemContainer);
       const logoImg = document.createElement('img');
       logoImg.className = 'logoImg';
-      logoImg.src = '../images/backgrounds/dinosauranimallogo.png';
+      logoImg.src = 'images/backgrounds/dinosauranimallogo.png';
       profilePage.appendChild(logoImg);
       const audioContainer = document.createElement('div');
       audioContainer.innerHTML = audioHtml;
@@ -276,7 +276,7 @@ function roomChoice(button, image, userId, backgroundId, roomJson) {
       profilePage.appendChild(itemContainer);
       const logoImg = document.createElement('img');
       logoImg.className = 'logoImg';
-      logoImg.src = '../images/backgrounds/dinosauranimallogo.png';
+      logoImg.src = 'images/backgrounds/dinosauranimallogo.png';
       profilePage.appendChild(logoImg);
       const audioContainer = document.createElement('div');
       audioContainer.innerHTML = audioHtml;

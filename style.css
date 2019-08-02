@@ -51,7 +51,7 @@ h1 {
 
 .bg {
   position: absolute;
-  background-image: url("../images/backgrounds/background-login.gif");
+  background-image: url("images/backgrounds/background-login.gif");
   height: 100vh;
   width: 100vw;
   background-size: cover;
